@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+body{
+    font-family: 'Fredoka One', cursive;
+    background-color: #F1FAEE;
+}
+
+.title-area{
+    margin-bottom: 2rem;
+    color: #457B9D; 
+    padding: 2rem 2rem 0.2rem 2rem;
+    background-color: #A8DADC;
+    
+}
+
+.title span{
+    color: #E63946;
+}
+
+.game-play{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 40vh;
+    color: #1D3557;
+}
+
+.game-play input{
+    color: #1D3557;
+}
+
+.player-name{
+    margin-right: 2rem;
+    font-size: 1.4rem;
+}
+
+.p1-text-color{
+    color: #E63946;
+}
+
+.p2-text-color{
+    color: #1D3557;
+}
+
+.main-menu-button{
+    background-color: #A8DADC;
+    color: #1D3557;
+}
+
+.main-menu-button:hover{
+    background-color: rgba(168, 218, 220, 0.4);
+}
+
+.game-board table{
+    margin: auto;
+    margin-top: 2rem;
+    border: solid black 3px;
+}
+
+.game-board__line{
+    border: solid black 2px;
+}
+
+.game-board__line td{
+    width: 3rem;
+    height: 3rem;
+    border: solid black 1px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.game-board__winner{
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+@media(min-width: 992px){
+    .game-play{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .game-board__line td{
+        width: 5rem;
+        height: 5rem;
+        font-size: 3rem;
+    }
+
+    .game-board__winner{
+        margin-top: 2.6rem;
+    }
+}
